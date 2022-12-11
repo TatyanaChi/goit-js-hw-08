@@ -11,8 +11,10 @@ player.on(
       'videoplayer-current-time',
       JSON.stringify(data.seconds)
     );
-  })
+  }),
+  1000
 );
+
 const data = localStorage.getItem('videoplayer-current-time');
 const parsed = JSON.parse(data);
 player
